@@ -2,35 +2,212 @@
 <html lang="en-US">
 
     <head>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <link rel="shortcut icon" type="image/x-icon"
+            href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmL/9PwAEVAJXqEEVDwAAAABJRU5ErkJggg== ">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta name="description" content="Ethan Justice">
-        <meta name="keywords" content="ethan justice,website,projects,developer,github">
-        <meta name="author" content="Ethan Justice">
-        <title>Home | Ethan Justice</title>
+        <meta name="description" content="hvlck">
+        <meta name="keywords" content="hvlck">
+        <meta name="author" content="hvlck">
+        <title>hvlck</title>
         <style>
-            :root{--highlight:#16c581;--primary:#212121;--secondary:#b9bec5;--tertiary:#404040;--transition:none;--animate-fade-in:none}@media (prefers-reduced-motion:no-preference){:root{--transition:150ms linear;--animate-fade-in:300ms fadeIn linear}}@media (prefers-color-scheme:dark){:root{--highlight:#16c581;--primary:#212121;--secondary:#b9bec5;--tertiary:#404040}}html{cursor:crosshair;border-top:2px solid var(--highlight)}body{background:var(--primary);color:var(--secondary);max-width:900px;margin:0 auto;padding:10px;font-family:"Consolas", monospace;line-height:1.4}*{transition:var(--transition);animation:var(--animate-fade-in)}h1{font-weight:normal;font-size:38pt;margin:0.1% -0.5%}h2{font-weight:normal;font-size:18pt;margin:0 -0.2%}h2,h3,h4,h5,h6{display:inline-block;padding:2px;border-bottom:2px solid var(--secondary)}nav{max-height:20pt}nav:hover~*{opacity:0.4}nav a,nav a:visited{font-size:14pt;font-weight:bold;color:var(--secondary);border-bottom:none;opacity:0.7;margin:0 5% 0 0;text-decoration:none}nav a:hover{border-bottom:none;color:var(--highlight);opacity:1}nav a:active,nav a:focus{border-color:transparent}h4{margin:1% auto;font-size:12pt;font-family:"Consolas", monospace}p{font-weight:bold}a,a:visited{font-size:inherit;font-weight:inherit;color:var(--highlight);text-decoration:none;border-bottom:2px solid var(--tertiary)}h4 a,h4 a:visited{font-size:16pt;font-size:bold}a:hover{border-bottom:2px solid var(--highlight)}hr{border:none;border-top:2px solid var(--tertiary);width:75%;margin:3% 0}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track{background:var(--primary)}::-webkit-scrollbar-thumb{background:var(--secondary)}::-moz-selection{background-color:var(--highlight);color:var(--primary)}::selection{background-color:var(--highlight);color:var(--primary)}
+            :root {
+                --highlight: #5e81f0;
+                --primary: #ededed;
+                --secondary: #464852;
+                --tertiary: #b9bec5;
+                --transition: none;
+                --animate-fade-in: none
+            }
+
+            @media (prefers-reduced-motion:no-preference) {
+                :root {
+                    --highlight: #009fb7;
+                    --transition: 150ms linear;
+                    --animate-fade-in: 250ms fadeIn linear
+                }
+            }
+
+            @media (prefers-color-scheme:dark) {
+                :root {
+                    --primary: #1a1b20;
+                    --secondary: #b9bec5;
+                    --tertiary: #464852
+                }
+            }
+
+            html {
+                cursor: crosshair;
+                border-top: 2px solid var(--highlight)
+            }
+
+            body {
+                background: var(--primary);
+                color: var(--secondary);
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 10px;
+                font-family: "Consolas", monospace;
+                line-height: 1.6;
+            }
+
+            * {
+                transition: var(--transition);
+                animation: var(--animate-fade-in)
+            }
+
+            h1 {
+                display: inline-block;
+                border-bottom: 1px solid var(--secondary);
+                font-weight: normal;
+                font-size: 38pt;
+                margin: 0 -0.5%
+            }
+
+            h2 {
+                font-weight: normal;
+                font-size: 18pt;
+                margin: 0 -0.2%
+            }
+
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                display: inline-block;
+                padding: 2px;
+                border-bottom: 1px solid var(--secondary)
+            }
+
+            nav {
+                max-height: 20pt
+            }
+
+            nav:hover~* {
+                opacity: 0.4
+            }
+
+            nav a,
+            nav a:visited {
+                font-size: 14pt;
+                font-weight: bold;
+                color: var(--secondary);
+                border-bottom: none;
+                opacity: 0.7;
+                margin: 0 3% 0 0;
+                text-decoration: none
+            }
+
+            nav a:hover {
+                border-bottom: none;
+                color: var(--highlight);
+                opacity: 1
+            }
+
+            h4 {
+                margin: 1% auto;
+                font-size: 12pt;
+                font-family: "Consolas", monospace
+            }
+
+            p {
+                font-size: 13pt;
+                font-weight: bold
+            }
+
+            a,
+            a:visited {
+                font-size: inherit;
+                font-weight: inherit;
+                color: var(--highlight);
+                text-decoration: none;
+                border-bottom: 1px solid var(--tertiary)
+            }
+
+            h4 a,
+            h4 a:visited {
+                font-size: 16pt;
+                font-size: bold
+            }
+
+            a:hover {
+                border-bottom: 1px solid var(--highlight)
+            }
+
+            hr {
+                border: none;
+                border-top: 1px solid var(--tertiary);
+                width: 75%;
+                margin: 2% auto
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+
+            ::-webkit-scrollbar {
+                height: 10px;
+                width: 10px
+            }
+
+            ::-webkit-scrollbar-track {
+                background: var(--primary)
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: var(--secondary)
+            }
+
+            ::-moz-selection {
+                background-color: var(--highlight);
+                color: var(--primary)
+            }
+
+            ::selection {
+                background-color: var(--highlight);
+                color: var(--primary)
+            }
         </style>
     </head>
 
     <body>
         <nav>
-            <a href="https://github.com/EthanJustice">GitHub</a>
+            <a href="/">/home</a>
+            <a href="https://github.com/hvlck/knowledge/blob/master/content/tooling/software.md">/uses</a>
+            <a href="https://github.com/hvlck/">GitHub</a>
         </nav>
-        <h1>Ethan Justice</h1>
+        <h1>hvlck</h1>
+        <p>I am a hobbyist programmer, primarily interested in programming languages, <a
+                href="https://en.m.wikipedia.org/wiki/Quantified_self">quantified
+                self</a>, web applications, biomechanics, space, and mathematics.</p>
+        </p>
         <hr>
         <h2>Work</h2>
-        <p><a href="https://github.com/EthanJustice/taita/">taita</a> - command palette library</p>
-        <p><a href="https://github.com/EthanJustice/kestrel/">kestrel</a> - general browser utilities WebExtension (primarily working on)</p>
-        <p><a href="https://github.com/EthanJustice/moulin/">moulin</a> - lightweight presentation generator</p>
-        <p><a href="https://github.com/EthanJustice/gyr-css/">gyr</a> - classless CSS stylesheet</p>
-        <p><a href="https://github.com/EthanJustice/laggar/">laggar</a> - cli site-to-markdown converter</p>
+        <p>At the moment, I'm currently focusing on building a set of <a
+                href="https://github.com/hvlck/sol">protocols</a>, <a
+                href="https://github.com/hvlck/outline">formats</a>, and tooling to enable greater interoperability
+            between services, as well as <a href="https://github.com/hvlck/lunar">personal applications</a>.</p>
+        <p><a href="https://github.com/hvlck/taita.ts/">taita</a> (ts) - command palette library</p>
+        <p><a href="https://github.com/hvlck/kestrel/">kestrel</a> (ts) - general browser utilities</p>
+        <p><a href="https://github.com/hvlck/moulin/">moulin</a> (js) - lightweight presentation generator</p>
+        <p><a href="https://github.com/hvlck/gyr-css/">gyr</a> (css) - classless CSS stylesheet</p>
+        <p><a href="https://github.com/hvlck/laggar/">laggar</a> (rust) - cli site-to-markdown converter</p>
+        <p><a href="https://github.com/hvlck/lanner/">lanner</a> (rust) - math evaluator</p>
         <hr>
-        <p>I also maintain a collection of <a href="https://github.com/EthanJustice/links">links</a> I find useful.</p>
+        <p>I have a personal <a href="https://github.com/hvlck/knowledge">wiki</a> where I store my notes, experiments,
+            and
+            accumulated wisdom.</p>
         <p>The source for this site can be found at <a
-                href="https://github.com/EthanJustice/ethanjustice.github.io">EthanJustice/ethanjustice.github.io</a>.</p>
-                <p>UserScripts and bookmarklets I find useful can be found in my <a href="https://github.com/EthanJustice/userscripts">userscripts</a> repository.</p>
+                href="https://github.com/hvlck/hvlck.github.io">hvlck/hvlck.github.io</a>.</p>
+        <p>UserScripts and bookmarklets I find useful can be found in my <a
+                href="https://github.com/hvlck/userscripts">userscripts</a> repository.</p>
     </body>
 
 </htmL>
