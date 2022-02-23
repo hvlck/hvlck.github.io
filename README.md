@@ -1,3 +1,3 @@
-# ethanjustice.github.io
+# hvlck.github.io
 
 personal site
