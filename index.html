@@ -2,222 +2,27 @@
 <html lang="en-US">
 
     <head>
-        <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmL/9PwAEVAJXqEEVDwAAAABJRU5ErkJggg== ">
+        <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMa/zwHwAF5ALQ7FiJ2wAAAABJRU5ErkJggg== ">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="description" content="hvlck">
         <meta name="keywords" content="hvlck">
         <meta name="author" content="hvlck">
         <title>hvlck</title>
-        <style>
-            :root {
-                --highlight: #5e81f0;
-                --primary: #ededed;
-                --secondary: #464852;
-                --tertiary: #b9bec5;
-                --quaternary: #252525;
-                --transition: none;
-            }
-
-            @media (prefers-reduced-motion:no-preference) {
-                :root {
-                    --transition: 150ms ease-in-out;
-                }
-            }
-
-            @media (prefers-color-scheme:dark) {
-                :root {
-                    --primary: #1a1b20;
-                    --secondary: #b9bec5;
-                    --tertiary: #464852;
-                    --quaternary: #7b7b7b;
-                }
-            }
-
-            html {
-                background-color: var(--highlight);
-                cursor: crosshair;
-                border-top: 2px solid var(--highlight);
-            }
-
-            body {
-                background: var(--primary);
-                color: var(--secondary);
-                margin: 0 auto;
-                padding: 10px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                line-height: 1.8;
-            }
-
-            * {
-                transition: var(--transition);
-            }
-
-            .main {
-                max-width: 800px;
-                margin: 0 auto;
-            }
-
-            h1 {
-                font-size: 38pt;
-                margin: 0 -0.5%;
-                border-bottom: none !important;
-            }
-
-            #logo {
-                display: inline-block;
-                height: 19pt;
-                width: 19pt;
-                background-color: var(--highlight);
-                margin: 0 1rem;
-                vertical-align: middle;
-            }
-
-            h2 {
-                font-size: 22pt;
-                margin: 0 -0.2%
-            }
-
-            h3 {
-                font-size: 16pt;
-                margin: 0;
-            }
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-weight: normal;
-                display: inline-block;
-                border-bottom: 1px solid var(--secondary)
-            }
-
-            nav a,
-            nav a:visited {
-                font-size: 18px;
-                color: var(--secondary);
-                border-bottom: none;
-                opacity: 0.7;
-                margin: 0 3% 0 0;
-                text-decoration: none
-            }
-
-            nav a:first-of-type {
-                margin: 0 3% 0 0 -1% !important;
-            }
-
-            nav a:hover {
-                border-bottom: none;
-                color: var(--highlight);
-                opacity: 1
-            }
-
-            h4 {
-                margin: 1% auto;
-                font-size: 12pt;
-                font-family: "Consolas", monospace
-            }
-
-            p {
-                margin: 1.5rem 0;
-                font-size: 16px;
-            }
-
-            a,
-            a:visited {
-                font-size: inherit;
-                color: var(--highlight);
-                text-decoration: none;
-                border-bottom: 1px solid var(--tertiary)
-            }
-
-            h4 a,
-            h4 a:visited {
-                font-size: 16pt;
-                font-size: bold
-            }
-
-            a:hover {
-                border-bottom: 1px solid var(--highlight)
-            }
-
-            a[aria-disabled] {
-                opacity: 0.8;
-                cursor: not-allowed;
-                border-bottom: 1px solid var(--tertiary);
-            }
-
-            hr {
-                border: none;
-                border-top: 1px solid var(--tertiary);
-                margin: 2% auto
-            }
-
-            .projects p {
-                margin: 1rem 0;
-            }
-
-            li {
-                margin: 0.75rem 0;
-            }
-
-            footer {
-                margin: 2rem 0 0.5rem 0;
-            }
-
-            footer a {
-                margin: 0 1rem 0 0;
-                border-bottom: none;
-                color: var(--quaternary) !important;
-                opacity: 1;
-                font-size: 12pt;
-            }
-
-            footer a:hover {
-                color: var(--highlight) !important;
-                border-bottom: none;
-                text-decoration: none;
-            }
-
-            ::-webkit-scrollbar {
-                height: 10px;
-                width: 10px
-            }
-
-            ::-webkit-scrollbar-track {
-                background: var(--primary)
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: var(--secondary)
-            }
-
-            ::-moz-selection {
-                background-color: var(--highlight);
-                color: var(--primary)
-            }
-
-            ::selection {
-                background-color: var(--highlight);
-                color: var(--primary)
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="./index.css" />
     </head>
 
     <body>
         <div class="main">
-            <h1><span id="logo"></span>hvlck</h1>
-            <p>Hobbyist programmer primarily interested in programming languages, <a href="https://en.m.wikipedia.org/wiki/Quantified_self">quantified
-                    self</a>, web applications, biomechanics, space, and mathematics.</p>
-            </p>
-            <hr>
             <nav>
                 <a href="#work">Work</a>
                 <a href="#now">Now</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <hr>
+            <h1>hvlck</h1>
+            <p>I am a hobbyist programmer primarily interested in programming languages, <a href="https://en.m.wikipedia.org/wiki/Quantified_self">quantified
+                    self</a>, engineering, biomechanics, space, and mathematics.</p>
+            </p>
             <div class="sections">
                 <div id="work">
                     <h2>Work</h2>
@@ -226,24 +31,27 @@
                     <p>Most of this work is not public at the moment, but I have plans to open-source it in the future.</p>
                     <h3>Selected Projects</h3>
                     <div class="projects">
-                        <p><a href="https://github.com/hvlck/taita.ts/">taita</a> - command palette library for the web</p>
-                        <p><a href="https://github.com/hvlck/charon/">charon</a> - a work-in-progress programming language</p>
-                        <p><a href="https://github.com/hvlck/lanner/">lanner</a> - math evaluator</p>
+                        <ul>
+                            <li><a href="https://github.com/hvlck/taita.ts/">taita</a> - command palette library for the web</li>
+                            <li><a href="https://github.com/hvlck/charon/">charon</a> - a work-in-progress programming language</li>
+                            <li><a href="https://github.com/hvlck/lanner/">lanner</a> - math evaluator</li>
+                        </ul>
                     </div>
                 </div>
-                <div id="now" class="container">
+                <div id="now">
                     <h2>Now</h2>
                     <p>I'm currently in high school, busy with track and academics.</p>
                     <p>Unfortunately, I don't have as much free time to work on my projects as I'd like. I try to build whenever I can though.</p>
-                    <p>When I do have time, I'm focusing on building interoperable applications.
-                        The ultimate end goal of this work is to have a set of applications that anyone can use, freely available and open-source, and able to interact with one another fluidly.</p>
-                    <p>I keep in shape by running, racing distances from the 800 meters to half-marathons. I run in Brooks, and use a COROS Pace 2 for all my timekeeping needs.</p>
+                </div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <p>My email can be found on my <a href="https://github.com/hvlck/">Github</a> profile.</p>
                 </div>
             </div>
             <footer>
-                <hr>
                 <a href="/">Home</a>
                 <a href="https://github.com/hvlck/">Github</a>
+                <a href="https://github.com/hvlck/hvlck.github.io">Site Source</a>
             </footer>
         </div>
     </body>
