@@ -1,12 +1,16 @@
 :root {
     --highlight: #00ABE7;
     --highlight-dim: #00ABE71a;
+    --dark-blue: #0037e7;
     --orange: #EA5C1F;
+    --green: #00e7b0;
+    --purple: #b615ff;
 
     --primary: #F6F5F4;
     --secondary: #1C1F21;
     --tertiary: #DAD6D2;
     --quaternary: var(--secondary);
+    --quinary: #45505E;
 }
 
 
@@ -16,14 +20,13 @@
         --secondary: #EFEDE6;
         --tertiary: #2F3437;
         --quaternary: #E7E4DA;
-
-        --senary: #BFB8B0;
+        --quinary: #BFB8B0;
     }
 }
 
 body {
     background-color: var(--primary);
-    color: var(--senary);
+    color: var(--quinary);
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
@@ -74,4 +77,86 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+*:target {
+    /* padding: 10px; */
+    padding: 0.25rem 0 0.25rem 1rem;
+    border-left: 2px solid var(--highlight);
+}
+
+#logo {
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0 1rem 0 0;
+    background-color: var(--highlight);
+}
+
+code {
+    background-color: var(--highlight-dim);
+    color: var(--highlight);
+    margin: 0.75rem 0;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+pre {
+    border: 2px solid var(--highlight-dim);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+pre code {
+    color: var(--secondary);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+pre span[id] {
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+img,
+video {
+    max-width: 100%;
+    max-height: 600px;
+    display: block;
+}
+
+figure {
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 2px solid var(--tertiary);
+}
+
+figcaption {
+    font-style: italic;
+    margin: 1rem 0;
+    font-size: 12pt;
+    color: var(--quinary);
+}
+
+blockquote {
+    padding: 0.5rem 1rem;
+    border-left: 2px solid var(--highlight);
+}
+
+cite::before {
+    content: '~';
+}
+
+cite {
+    display: block;
+}
+
+ul {
+    margin: 0;
+}
+
+hr {
+    height: 0;
+    border: 1px solid var(--tertiary);
 }
