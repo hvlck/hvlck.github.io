@@ -24,8 +24,12 @@
     }
 }
 
+html {
+    background: linear-gradient(135deg, #232C37 13.54%, #1A1E23 62.5%);
+    background-color: #1A1E23;
+}
+
 body {
-    background-color: var(--primary);
     color: var(--quinary);
     max-width: 800px;
     padding: 10px;
@@ -124,6 +128,7 @@ video {
     max-width: 100%;
     max-height: 600px;
     display: block;
+    background-color: var(--tertiary);
 }
 
 figure {
