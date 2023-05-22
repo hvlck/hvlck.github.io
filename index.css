@@ -145,12 +145,9 @@ figcaption {
 }
 
 blockquote {
+    font-style: italic;
     padding: 0.5rem 1rem;
-    border-left: 2px solid var(--highlight);
-}
-
-cite::before {
-    content: '~';
+    border-left: 2px solid var(--quinary);
 }
 
 cite {
