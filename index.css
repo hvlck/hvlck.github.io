@@ -1,10 +1,21 @@
 body {
     max-width: 600px;
-    margin: 4rem 5rem;
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    margin: 4rem auto 1rem auto;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "avenir next",
+        avenir,
+        helvetica,
+        "helvetica neue",
+        ubuntu,
+        roboto,
+        noto,
+        "segoe ui",
+        arial,
+        sans-serif;
     line-height: 1.75;
     font-weight: normal;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 @media screen and (max-width:600px) {
@@ -13,21 +24,22 @@ body {
     }
 }
 
+.sep {
+    text-align: center;
+    font-family: monospace;
+    margin: 1rem 0;
+    font-size: 14pt;
+}
+
 a,
 a:visited {
-    color: #7b7b7b;
+    color: #5e81f0;
 }
 
-img,
-video,
-figure {
+p:has(b) {
     margin: 0;
-    max-width: 600px;
 }
 
-hr {
+p:has(b)+p {
     margin: 0;
-    max-width: 75%;
-    border-top: 0.5px solid #7b7b7b;
-    border-radius: 6px;
 }
